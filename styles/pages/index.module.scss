@@ -1,1 +1,10 @@
- 
+.content {
+  margin: 70px 90px;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--grey-1000);
+    margin-bottom: 20px;
+  }
+}
