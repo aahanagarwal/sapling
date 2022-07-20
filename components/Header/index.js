@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import SaplingLogo from "../../public/logo/sapling.png";
+import SaplingLight from "../../public/logo/sapling-light.png";
+import SaplingHeavy from "../../public/logo/sapling-heavy.png";
 
 export default function Header() {
   const router = useRouter();
@@ -30,13 +31,13 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.header__logo}>
         <Image
-          width={60}
-          height={56}
+          width={76}
+          height={48}
           alt="Sapling"
           onClick={() => {
             router.push("/");
           }}
-          src={SaplingLogo}
+          src={SaplingHeavy}
         />
       </div>
 
@@ -72,6 +73,8 @@ const HeaderLink = ({ href, label, active }) => {
 };
 
 const UserProfile = () => {
+  const router = useRouter();
+
   return (
     <div
       className={styles.header__nav__user}

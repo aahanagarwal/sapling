@@ -4,7 +4,7 @@ import PageStyles from "../../styles/pages/index.module.scss";
 export default function Content() {
   return (
     <div className={PageStyles.content}>
-      <div className={PageStyles.content__title}>Dashboard</div>
+      <div className={PageStyles.content__title}>Namaste, Arnav!</div>
     </div>
   );
 }
