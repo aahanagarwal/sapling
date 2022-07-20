@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../Header";
 
 const Layout = ({ children, title }) => {
   return (
@@ -10,9 +11,11 @@ const Layout = ({ children, title }) => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
-        <title>{title}</title>
+        <title>Sapling</title>
       </Head>
       <div id="popupContainer"></div>
+      <Header />
+      {children}
     </div>
   );
 };

@@ -1,6 +1,5 @@
 /* Import */
 @import "./colors";
-@import "./fonts";
 
 /* Normalize */
 *,
@@ -10,12 +9,18 @@
   padding: 0;
   box-sizing: inherit;
 }
+
 * {
   font-family: "Inter";
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   box-sizing: border-box;
+  background: var(--grey-0);
 }
 
 // ::-webkit-scrollbar {

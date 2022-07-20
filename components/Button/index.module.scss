@@ -1,18 +1,25 @@
-.fab {
-  height: 64px;
-  width: 64px;
-  position: fixed;
-  bottom: 40px;
-  right: 50px;
-  border-radius: 50%;
-  outline: none;
-  box-shadow: none;
-  background-color: var(--primary);
-  border: none;
-  color: #fff;
+.button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  border: none;
+  background: var(--primary);
+  color: var(--grey-100);
+  border-radius: 8px;
+  padding: 15px 35px;
+  font-size: 1rem;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: #91cf7d;
+  }
+
+  &:disabled {
+    background: #adf098;
+    color: #ffffff;
+  }
+
+  transition: all 0.1s ease-in;
 }
