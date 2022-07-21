@@ -39,12 +39,17 @@
     &__user {
       width: 42px;
       height: 42px;
+      border-radius: 50%;
       cursor: pointer;
 
       &__avatar {
         width: 42px;
         height: 42px;
         border-radius: 50%;
+
+        &__active {
+          border: 1px solid var(--primary);
+        }
       }
     }
   }

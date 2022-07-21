@@ -13,16 +13,24 @@ export default function Header() {
   useEffect(() => {
     setLinks([
       {
-        href: "/dashboard",
+        href: "/app/",
         label: "Dashboard",
-        active: router.pathname === "/dashboard",
+        active: router.pathname === "/app",
       },
-      { href: "/field", label: "Field", active: router.pathname === "/field" },
-      { href: "/drone", label: "Drone", active: router.pathname === "/drone" },
       {
-        href: "/devices",
+        href: "/app/field",
+        label: "Field",
+        active: router.pathname === "/app/field",
+      },
+      {
+        href: "/app/drone",
+        label: "Drone",
+        active: router.pathname === "/app/drone",
+      },
+      {
+        href: "/app/devices",
         label: "My Devices",
-        active: router.pathname === "/devices",
+        active: router.pathname === "/app/devices",
       },
     ]);
   }, []);
@@ -64,8 +72,7 @@ const HeaderLink = ({ href, label, active }) => {
       <div
         className={`${styles.header__nav__link} ${
           active ? styles.header__nav__link__active : ""
-        }`}
-      >
+        }`}>
         {label}
       </div>
     </Link>
@@ -79,13 +86,16 @@ const UserProfile = () => {
     <div
       className={styles.header__nav__user}
       onClick={() => {
-        router.push("/profile");
-      }}
-    >
+        router.push("/app/profile");
+      }}>
       <img
-        className={styles.header__nav__user__avatar}
+        className={`${styles.header__nav__user__avatar} ${
+          router.pathname === "/app/profile"
+            ? styles.header__nav__user__avatar__active
+            : ""
+        }`}
         src="https://media.discordapp.net/attachments/866329183184748584/999274097970270278/unknown.png"
-      ></img>
+      />
     </div>
   );
 };
