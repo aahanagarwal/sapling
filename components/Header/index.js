@@ -72,7 +72,8 @@ const HeaderLink = ({ href, label, active }) => {
       <div
         className={`${styles.header__nav__link} ${
           active ? styles.header__nav__link__active : ""
-        }`}>
+        }`}
+      >
         {label}
       </div>
     </Link>
@@ -87,14 +88,15 @@ const UserProfile = () => {
       className={styles.header__nav__user}
       onClick={() => {
         router.push("/app/profile");
-      }}>
+      }}
+    >
       <img
         className={`${styles.header__nav__user__avatar} ${
           router.pathname === "/app/profile"
             ? styles.header__nav__user__avatar__active
             : ""
         }`}
-        src="https://media.discordapp.net/attachments/866329183184748584/999274097970270278/unknown.png"
+        src="https://media.discordapp.net/attachments/918218224103997487/999730063169822770/unknown.png"
       />
     </div>
   );

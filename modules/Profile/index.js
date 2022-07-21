@@ -14,7 +14,7 @@ export default function Content() {
           <div className={styles.profile__picture}>
             <img
               src={
-                "https://media.discordapp.net/attachments/866329183184748584/999274097970270278/unknown.png"
+                "https://media.discordapp.net/attachments/918218224103997487/999730063169822770/unknown.png"
               }
             />
           </div>
