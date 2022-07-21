@@ -1,11 +1,22 @@
 .profile {
   display: flex;
+  margin: auto;
   flex-flow: column;
+  width: fit-content;
 
   &__picture {
     img {
       border-radius: 50%;
       width: 240px;
+    }
+  }
+
+  &__data {
+    margin-top: 20px;
+
+    &__row {
+      display: flex;
+      gap: 20px;
     }
   }
 }

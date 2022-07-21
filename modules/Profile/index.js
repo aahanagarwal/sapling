@@ -21,8 +21,9 @@ export default function Content() {
         </div>
 
         <div className={styles.profile__data}>
-          <div className={styles.profile__data__name}>
+          <div className={styles.profile__data__row}>
             <TextField label={"Name"} value={name} setValue={setName} />
+            <TextField label={"Surname"} value={name} setValue={setName} />
           </div>
         </div>
       </div>
