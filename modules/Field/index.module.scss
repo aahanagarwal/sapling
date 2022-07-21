@@ -9,9 +9,15 @@
   &__farmBlock {
     width: 140px;
     opacity: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
 
     &__active {
       opacity: 100%;
+    }
+
+    &:hover {
+      opacity: 70%;
     }
   }
 }
@@ -27,6 +33,7 @@
     flex-direction: column;
     padding: 50px;
     gap: 10px;
+    height: fit-content;
 
     &__data {
       width: 100%;
