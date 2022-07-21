@@ -31,7 +31,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.header__logo}>
         <Image
-          width={76}
+          width={78}
           height={48}
           alt="Sapling"
           onClick={() => {
