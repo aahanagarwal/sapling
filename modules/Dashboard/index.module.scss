@@ -1,0 +1,39 @@
+.farmView {
+  width: fit-content;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(7, 140px);
+
+  &__farmBlock {
+    width: 140px;
+    opacity: 50%;
+    transition: all 0.3s;
+
+    &__active {
+      opacity: 100%;
+    }
+  }
+}
+
+.farmBlockDetails {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  &__metrics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 10px;
+    height: fit-content;
+
+    &__data {
+      width: 100%;
+      padding: 0 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

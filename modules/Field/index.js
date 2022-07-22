@@ -69,8 +69,7 @@ export default function Content() {
             className={cx(
               PageStyles.content__content,
               styles.farmBlockDetails__metrics__data
-            )}
-          >
+            )}>
             <span> Nitrogenus Content: </span>
             <span
               style={{
@@ -80,8 +79,7 @@ export default function Content() {
                     : farmData.nitrogenContent > 33
                     ? "var(--lemon-yellow)"
                     : "var(--apple-red)",
-              }}
-            >
+              }}>
               {farmData.nitrogenContent} mg/kg
             </span>
           </div>
@@ -89,8 +87,7 @@ export default function Content() {
             className={cx(
               PageStyles.content__content,
               styles.farmBlockDetails__metrics__data
-            )}
-          >
+            )}>
             <span>Soil Organic Matter (SOM): </span>
             <span
               style={{
@@ -100,8 +97,7 @@ export default function Content() {
                     : farmData.organicMatter > 33
                     ? "var(--lemon-yellow)"
                     : "var(--apple-red)",
-              }}
-            >
+              }}>
               {farmData.organicMatter}%
             </span>
           </div>
@@ -109,8 +105,7 @@ export default function Content() {
             className={cx(
               PageStyles.content__content,
               styles.farmBlockDetails__metrics__data
-            )}
-          >
+            )}>
             <span>Water: </span>
             <span
               style={{
@@ -120,8 +115,7 @@ export default function Content() {
                     : farmData.water > 33
                     ? "var(--lemon-yellow)"
                     : "var(--apple-red)",
-              }}
-            >
+              }}>
               {farmData.water} Pa
             </span>
           </div>
@@ -137,16 +131,13 @@ export default function Content() {
                   className={cx(
                     styles.farmBlockDetails__timeline__event,
                     styles.farmBlockDetails__timeline__event__future
-                  )}
-                >
+                  )}>
                   <img src="/timeline_graphic.svg" />
                   <div
-                    className={styles.farmBlockDetails__timeline__event__data}
-                  >
+                    className={styles.farmBlockDetails__timeline__event__data}>
                     <div
                       className={PageStyles.content__content}
-                      style={{ marginBottom: 0 + "px !important" }}
-                    >
+                      style={{ marginBottom: 0 + "px !important" }}>
                       {_timelineEvent.activity}
                     </div>
                     <div className={PageStyles.content__paragraph}>
@@ -160,12 +151,10 @@ export default function Content() {
                 <div className={styles.farmBlockDetails__timeline__event}>
                   <img src="/timeline_graphic.svg" />
                   <div
-                    className={styles.farmBlockDetails__timeline__event__data}
-                  >
+                    className={styles.farmBlockDetails__timeline__event__data}>
                     <div
                       className={PageStyles.content__content}
-                      style={{ marginBottom: 0 + "px !important" }}
-                    >
+                      style={{ marginBottom: 0 + "px !important" }}>
                       {_timelineEvent.activity}
                     </div>
                     <div className={PageStyles.content__paragraph}>

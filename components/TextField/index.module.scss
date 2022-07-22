@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-flow: column;
-  width: 280px;
+  width: 100%;
   position: relative;
 }
 
@@ -11,7 +11,6 @@
   top: 53%;
   font-size: 16px;
   font-weight: 600;
-
   width: fit-content;
   position: absolute;
   color: var(--grey-600);
@@ -27,14 +26,14 @@
   line-height: 130%;
   top: 12px;
   z-index: 30;
-  padding: 16px 15px;
+  padding: 16px 14px;
   background-color: transparent;
   border: 2px solid var(--grey-400);
   border-radius: 5px;
   outline: none;
   transition: all 0.2s;
   color: var(--grey-1000);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   resize: none;
   width: 100%;

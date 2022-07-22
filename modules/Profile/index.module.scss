@@ -7,17 +7,22 @@
   &__picture {
     img {
       border-radius: 50%;
-      width: 240px;
-      height: 240px;
+      width: 170px;
+      height: 170px;
     }
   }
 
   &__data {
-    margin-top: 20px;
+    margin-top: 40px;
 
     &__row {
+      width: 100%;
       display: flex;
       gap: 20px;
+
+      &:nth-child(1) {
+        margin-bottom: 20px;
+      }
     }
   }
 }
