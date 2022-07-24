@@ -23,11 +23,6 @@ export default function Header() {
         active: router.pathname === "/app/field",
       },
       {
-        href: "/app/drone",
-        label: "Drone",
-        active: router.pathname === "/app/drone",
-      },
-      {
         href: "/app/devices",
         label: "My Devices",
         active: router.pathname === "/app/devices",
