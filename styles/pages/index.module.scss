@@ -7,7 +7,15 @@
     font-size: 32px;
     font-weight: 900;
     color: var(--grey-1000);
-    margin-bottom: 20px;
+    margin: auto 0;
+  }
+
+  &__header__title {
+    display: block;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--grey-1000);
   }
 
   &__content {
@@ -21,4 +29,23 @@
     width: fit-content;
     margin: 30px auto;
   }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.content__header__action__button {
+  margin: auto 0;
+  background-color: transparent !important;
+  color: var(--primary) !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  gap: 8px;
+}
+
+.content__header__action__button:hover {
+  color: #91cf7d !important;
 }

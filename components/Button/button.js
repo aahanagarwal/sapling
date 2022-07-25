@@ -1,8 +1,14 @@
 import styles from "./index.module.scss";
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 
-const Button = ({ children, onClick, disabled }) => {
+const Button = ({ children, onClick, disabled, altClass }) => {
   return (
-    <button className={styles.button} onClick={onClick} disabled={disabled}>
+    <button
+      className={cx(styles.button, altClass)}
+      onClick={onClick}
+      disabled={disabled}
+    >
       {children}
     </button>
   );
