@@ -1,5 +1,5 @@
-import Layout from "../../components/Layout";
-import Content from "../../modules/Profile";
+import Layout from "../components/Layout";
+import Content from "../modules/Profile";
 
 export default function Profile() {
   return (

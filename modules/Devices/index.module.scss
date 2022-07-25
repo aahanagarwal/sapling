@@ -1,0 +1,43 @@
+.device {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  min-width: 300px;
+  max-height: 400px;
+  min-height: 260px;
+  background-color: rgba(246, 246, 246, 0.49);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  &__picture {
+    transform: scale(0.4);
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--grey-1000);
+    margin-top: -10px;
+  }
+
+  &__status {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 20px 15px 20px;
+
+    * {
+      margin: auto 0;
+    }
+
+    &__text {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}

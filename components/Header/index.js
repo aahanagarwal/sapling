@@ -13,19 +13,19 @@ export default function Header() {
   useEffect(() => {
     setLinks([
       {
-        href: "/app/",
+        href: "/",
         label: "Dashboard",
-        active: router.pathname === "/app",
+        active: router.pathname === "/",
       },
       {
-        href: "/app/field",
+        href: "/field",
         label: "Field",
-        active: router.pathname === "/app/field",
+        active: router.pathname === "/field",
       },
       {
-        href: "/app/devices",
+        href: "/devices",
         label: "My Devices",
-        active: router.pathname === "/app/devices",
+        active: router.pathname === "/devices",
       },
     ]);
   }, []);
@@ -82,12 +82,12 @@ const UserProfile = () => {
     <div
       className={styles.header__nav__user}
       onClick={() => {
-        router.push("/app/profile");
+        router.push("/profile");
       }}
     >
       <img
         className={`${styles.header__nav__user__avatar} ${
-          router.pathname === "/app/profile"
+          router.pathname === "/profile"
             ? styles.header__nav__user__avatar__active
             : ""
         }`}

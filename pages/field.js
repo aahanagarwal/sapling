@@ -1,5 +1,5 @@
-import Layout from "../../components/Layout";
-import Content from "../../modules/Field";
+import Layout from "../components/Layout";
+import Content from "../modules/Field";
 
 export default function Dashboard() {
   return (

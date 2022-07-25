@@ -25,15 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/app": [
+    "/devices": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/app.js"
+      "static/chunks/pages/devices.js"
     ],
-    "/app/devices": [
+    "/field": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/app/devices.js"
+      "static/chunks/pages/field.js"
     ]
   },
   "ampFirstPages": []
