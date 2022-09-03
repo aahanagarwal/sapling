@@ -1,0 +1,28 @@
+.profile {
+  display: flex;
+  margin: auto;
+  flex-flow: column;
+  width: fit-content;
+
+  &__picture {
+    img {
+      border-radius: 50%;
+      width: 170px;
+      height: 170px;
+    }
+  }
+
+  &__data {
+    margin-top: 40px;
+
+    &__row {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+
+      &:nth-child(1) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

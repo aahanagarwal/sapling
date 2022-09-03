@@ -1,0 +1,26 @@
+.textButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: rgba(#fefefe, 0%);
+  color: var(--primary);
+  border-radius: 8px;
+  padding: 15px 35px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #91cf7d;
+    background: rgba(#adf098, 22%);
+  }
+
+  &:disabled {
+    background: rgba(#fefefe, 0%);
+    color: var(--accent);
+  }
+
+  transition: all 0.1s ease-in;
+}

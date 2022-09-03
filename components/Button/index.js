@@ -1,3 +1,3 @@
-import FAB from "./fab";
+import Button from "./button";
 
-export { FAB };
+export default Button;

@@ -1,0 +1,20 @@
+.textOnlyButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: var(--primary);
+  border-radius: 8px;
+  padding: 15px 35px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #91cf7d;
+  }
+
+  transition: all 0.1s ease-in;
+}
